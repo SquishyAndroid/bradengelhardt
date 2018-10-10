@@ -5,7 +5,7 @@ const Navbar = ({moveToIntro, moveToAbout, moveToPortfolio, moveToContact}) => {
 	return (
 		<div className="nav-header">
     		<div className="nav-brand">
-      			<img src={logo} onClick={() => moveToIntro()} />
+      			<img src={logo} onClick={() => moveToIntro()} alt="brand logo"/>
     		</div>
     		<i className="fa fa-bars fa-3x"></i>
 

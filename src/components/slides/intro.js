@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import WOW from 'wowjs';
-import logo from '../../assets/logo.svg';
 
 const name  = { color: 'white' };
 const divider = { color: '#FF6363' };
@@ -25,7 +24,7 @@ export default class Intro extends Component {
 
 		setTimeout(() => {
 			let page = this.props.fullpageApi.getActiveSection();
-			if (page.index == 0) {
+			if (page.index === 0) {
 				this.props.moveDown();
 			}
 		}, 4400)

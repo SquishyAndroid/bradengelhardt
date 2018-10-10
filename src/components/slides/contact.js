@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, InputGroup, TextArea } from "@blueprintjs/core";
+import { InputGroup, TextArea } from "@blueprintjs/core";
 
 const Contact = () => {
 	return(

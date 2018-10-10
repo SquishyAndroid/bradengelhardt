@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import FullpageWrapper from './fullpage-wrapper';
 import Particles from 'react-particles-js';
 
 const linkStyles = (links, section) => {
     setTimeout(() => {
         links.forEach(function(link) {
-            if (link.id == section) {
+            if (link.id === section) {
                 link.style.color = "#FF6363";
             } else {
                 link.style.color = '#757575';

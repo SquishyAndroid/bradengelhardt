@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import projects from '../../assets/projects.js';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import posed from "react-pose";
@@ -46,9 +46,9 @@ export default class Projects extends Component {
 				>
 					<Project 
 						className="project-description"
-						pose={i == this.state.index ? 'visible' : 'hidden'}
+						pose={i === this.state.index ? 'visible' : 'hidden'}
                         style={{
-                        	display: i == this.state.index ? 'flex' : 'none',
+                        	display: i === this.state.index ? 'flex' : 'none',
                             width: this.state.width,
                             height: this.state.height
                         }}>
@@ -56,7 +56,7 @@ export default class Projects extends Component {
                         <p>{project.description}</p>
                         <Button className="learn-more" intent={Intent.PRIMARY}>View more</Button>
                     </Project>
-                    <img key={i} src={project.image} />
+                    <img key={i} src={project.image} alt={project.description}/>
                 </div>
 			)
 		})

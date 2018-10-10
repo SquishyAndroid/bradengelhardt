@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Intro from './slides/intro';
 import About from './slides/about';
