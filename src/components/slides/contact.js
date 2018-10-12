@@ -31,11 +31,13 @@ export default class Contact extends Component {
 
 	handleForm(e) {
 		if (this.state.name && this.state.email && this.state.message && !this.state.sent) {
-			axios.post(
-		      	"https://formcarry.com/s/TUrf0hxKt7m", 
-		      	this.state, 
-		      	{headers: {"Accept": "application/json"}}
-		    )
+			axios.post("https://formcarry.com/s/TUrf0hxKt7m", {
+				name: this.state.name,
+				email: this.state.email,
+				message: this.state.message,
+		    },{
+		    	headers: {"Accept": "application/json"}
+		    })
 		    .then((response) => {
 		    	console.log(response);
 		    	if (response.data.code === 200) {

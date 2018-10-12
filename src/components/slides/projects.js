@@ -7,7 +7,6 @@ import { Button, Intent } from "@blueprintjs/core";
 const Project = posed.div({
 	hidden: { opacity: 0 },
 	visible: { opacity: 1, transition: { duration: 300 }}
-
 });
 
 export default class Projects extends Component {
