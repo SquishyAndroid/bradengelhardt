@@ -287,10 +287,22 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    @include transition-style(all 0.3s ease-in-out);
 
     &:hover {
         background-color: $brand-color;
         color: white;
+        @include transition-style(all 0.3s ease-in-out);
+    }
+}
+
+.sent {
+    color: green;
+    border: 2px solid green;
+
+    &:hover {
+        background-color: white;
+        color: green;
     }
 }
 

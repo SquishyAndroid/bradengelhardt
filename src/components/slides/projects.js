@@ -32,6 +32,13 @@ export default class Projects extends Component {
     	this.setState({ index: null });
     }
 
+    learnMore(url) {
+    	if (url) {
+    		let win = window.open(url, '_blank');
+ 			win.focus();
+    	}
+    }
+
     renderProjects(projects) {
     	let int = 100;
 		return projects.map((project, i) => {
@@ -54,7 +61,11 @@ export default class Projects extends Component {
                         }}>
                         
                         <p>{project.description}</p>
-                        <Button className="learn-more" intent={Intent.PRIMARY}>View more</Button>
+                        <Button 
+                        	className="learn-more"
+                        	intent={Intent.PRIMARY}
+                        	onClick={() => this.learnMore(project.url)}
+                        >View more</Button>
                     </Project>
                     <img key={i} src={project.image} alt={project.description}/>
                 </div>
