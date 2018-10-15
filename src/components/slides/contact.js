@@ -49,6 +49,8 @@ export default class Contact extends Component {
 		    	console.log(error);
 		    	this.showToast("There was an issue.", Intent.DANGER);
 		    });
+		} else {
+			this.showToast("Please complete all the fields and try again.", Intent.DANGER);
 		}
 	    e.preventDefault();
   	}
