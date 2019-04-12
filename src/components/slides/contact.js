@@ -52,7 +52,7 @@ export default class Contact extends Component {
 		} else {
 			this.showToast("Please complete all the fields and try again.", Intent.DANGER);
 		}
-	    // e.preventDefault();
+	    e.preventDefault();
   	}
 
 	handleFields(e) {
