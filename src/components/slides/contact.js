@@ -72,7 +72,6 @@ export default class Contact extends Component {
 
 		return(
 			<div className="section fourth">
-				<h1 className="app-title">Contact Me</h1>
 				<p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
 				
 				<form onSubmit={this.handleForm}>

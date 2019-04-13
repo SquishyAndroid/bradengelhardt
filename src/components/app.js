@@ -17,7 +17,7 @@ const linkStyles = (links, section) => {
 const fullpageOptions = {
     scrollBar: true,
     controlArrows: false,
-    licenseKey: "89192CAC-D37443B6-88C0505A-540BF775",
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     onLeave: function(origin, destination, direction){
         let links = document.querySelectorAll('.header-links a');
         switch(destination.index) {

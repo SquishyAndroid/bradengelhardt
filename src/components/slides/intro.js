@@ -19,7 +19,7 @@ export default class Intro extends Component {
 	    }).init();
 
 		setTimeout(() => {
-			this.writeText("FRONT-END WEB DEVELOPER");
+			this.writeText("FULL STACK WEB DEVELOPER");
 		}, 1000);
 
 		setTimeout(() => {
