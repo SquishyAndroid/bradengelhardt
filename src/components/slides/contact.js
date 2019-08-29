@@ -31,7 +31,7 @@ export default class Contact extends Component {
 
 	handleForm(e) {
 		if (this.state.name && this.state.email && this.state.message && !this.state.sent) {
-			axios.post("https://formcarry.com/s/TUrf0hxKt7m", {
+			axios.post("https://tinymailer.herokuapp.com/api/mail", {
 				name: this.state.name,
 				email: this.state.email,
 				message: this.state.message,
@@ -40,7 +40,7 @@ export default class Contact extends Component {
 		    })
 		    .then((response) => {
 		    	console.log(response);
-		    	if (response.data.code === 200) {
+		    	if (response.status === 200) {
 		    		this.showToast("Message sent!", Intent.SUCCESS);
 		    		this.setState({ buttonIcon: "fas fa-check-circle", sent: true });
 		    	}
@@ -73,7 +73,7 @@ export default class Contact extends Component {
 		return(
 			<div className="section fourth">
 				<p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
-				
+
 				<form onSubmit={this.handleForm}>
 			        <InputGroup
 						id="name"
@@ -99,7 +99,7 @@ export default class Contact extends Component {
 						data-wow-delay="550ms"
 						onChange={this.handleFields}
 					/>
-					<TextArea 
+					<TextArea
 						id="message"
 						name="message"
 						className="bp3-input wow fadeInLeft"
@@ -110,7 +110,7 @@ export default class Contact extends Component {
 						data-wow-delay="300ms"
 						onChange={this.handleFields}
 					/>
-					<button 
+					<button
 						className={buttonClass}
 						type="submit"
 					>Submit<span> <i className={this.state.buttonIcon}></i></span></button>
