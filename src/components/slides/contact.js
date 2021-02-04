@@ -8,17 +8,17 @@ const AppToaster = Toaster.create({
 
 export default class Contact extends Component {
 	constructor(props){
-	    super(props);
-	    this.state = {
-	    	name: "",
-	    	email: "",
-	    	message: "",
-	    	sent: false,
-	    	buttonIcon: "fas fa-paper-plane"
-	    };
+		super(props);
+		this.state = {
+			name: "",
+			email: "",
+			message: "",
+			sent: false,
+			buttonIcon: "fas fa-paper-plane"
+		};
 
-	    this.handleForm = this.handleForm.bind(this);
-	    this.handleFields = this.handleFields.bind(this);
+		this.handleForm = this.handleForm.bind(this);
+		this.handleFields = this.handleFields.bind(this);
 	}
 
 	showToast(message, intent) {
@@ -30,8 +30,9 @@ export default class Contact extends Component {
 	}
 
 	handleForm(e) {
+		e.preventDefault();
 		if (this.state.name && this.state.email && this.state.message && !this.state.sent) {
-			axios.post("https://tinymailer.herokuapp.com/api/mail", {
+			axios.post("https://formspree.io/f/mvovybao", {
 				name: this.state.name,
 				email: this.state.email,
 				message: this.state.message,
@@ -52,8 +53,7 @@ export default class Contact extends Component {
 		} else {
 			this.showToast("Please complete all the fields and try again.", Intent.DANGER);
 		}
-	    e.preventDefault();
-  	}
+  }
 
 	handleFields(e) {
 		this.setState({ [e.target.name]: e.target.value });
@@ -74,8 +74,10 @@ export default class Contact extends Component {
 			<div className="section fourth">
 				<p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
 
-				<form onSubmit={this.handleForm}>
-			        <InputGroup
+				<form
+					onSubmit={this.handleForm}
+				>
+			    <InputGroup
 						id="name"
 						name="name"
 						type="text"
@@ -114,8 +116,8 @@ export default class Contact extends Component {
 						className={buttonClass}
 						type="submit"
 					>Submit<span> <i className={this.state.buttonIcon}></i></span></button>
-			      </form>
-	        </div>
+			  </form>
+	    </div>
 		)
 	}
 }
