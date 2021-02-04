@@ -1,21 +1,29 @@
 {
-  "main.css": "/static/css/main.becc1c5f.chunk.css",
-  "main.js": "/static/js/main.0263f021.chunk.js",
-  "main.js.map": "/static/js/main.0263f021.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/css/2.cee32548.chunk.css": "/static/css/2.cee32548.chunk.css",
-  "static/js/2.ff131c76.chunk.js": "/static/js/2.ff131c76.chunk.js",
-  "static/js/2.ff131c76.chunk.js.map": "/static/js/2.ff131c76.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.d1284890fe876a7955d698920530dbb8.js": "/precache-manifest.d1284890fe876a7955d698920530dbb8.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/2.cee32548.chunk.css.map": "/static/css/2.cee32548.chunk.css.map",
-  "static/css/main.becc1c5f.chunk.css.map": "/static/css/main.becc1c5f.chunk.css.map",
-  "static/media/after_school.png": "/static/media/after_school.9be8e27d.png",
-  "static/media/eggplant_invaders.png": "/static/media/eggplant_invaders.e92894f6.png",
-  "static/media/machete.png": "/static/media/machete.1eb4f068.png",
-  "static/media/notify_me.png": "/static/media/notify_me.241a9084.png",
-  "static/media/tinymessage.png": "/static/media/tinymessage.546d6cde.png",
-  "static/media/xfaire.png": "/static/media/xfaire.6f77e56b.png"
+  "files": {
+    "main.css": "/static/css/main.98d659ce.chunk.css",
+    "main.js": "/static/js/main.1f0c6035.chunk.js",
+    "main.js.map": "/static/js/main.1f0c6035.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6097e04a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6097e04a.js.map",
+    "static/css/2.7601e833.chunk.css": "/static/css/2.7601e833.chunk.css",
+    "static/js/2.e9702713.chunk.js": "/static/js/2.e9702713.chunk.js",
+    "static/js/2.e9702713.chunk.js.map": "/static/js/2.e9702713.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7601e833.chunk.css.map": "/static/css/2.7601e833.chunk.css.map",
+    "static/css/main.98d659ce.chunk.css.map": "/static/css/main.98d659ce.chunk.css.map",
+    "static/js/2.e9702713.chunk.js.LICENSE.txt": "/static/js/2.e9702713.chunk.js.LICENSE.txt",
+    "static/media/after_school.621892c1.png": "/static/media/after_school.621892c1.png",
+    "static/media/eggplant_invaders.c3821af0.png": "/static/media/eggplant_invaders.c3821af0.png",
+    "static/media/machete.ab8950f4.png": "/static/media/machete.ab8950f4.png",
+    "static/media/notify_me.f4b4115e.png": "/static/media/notify_me.f4b4115e.png",
+    "static/media/tinymessage.9d967964.png": "/static/media/tinymessage.9d967964.png",
+    "static/media/xfaire.7d7d7719.png": "/static/media/xfaire.7d7d7719.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6097e04a.js",
+    "static/css/2.7601e833.chunk.css",
+    "static/js/2.e9702713.chunk.js",
+    "static/css/main.98d659ce.chunk.css",
+    "static/js/main.1f0c6035.chunk.js"
+  ]
 }
