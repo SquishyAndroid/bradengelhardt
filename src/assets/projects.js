@@ -10,7 +10,7 @@ const projects = [
 		name: 'After School App',
 		description: 'A private social network for teens to connect and share with their peers at their school',
 		image: afterschool,
-		url: "http://afterschoolapp.com/"
+		url: "https://en.wikipedia.org/wiki/After_School_(app)"
 	},
 	{
 		name: 'NotifyMe',
@@ -22,7 +22,7 @@ const projects = [
 		name: 'Eggplant Invaders',
 		description: 'Space Invaders style game created for sex awareness month using Phaser.js & Slim PHP',
 		image: eggplantinvaders,
-		url: "http://eggplantinvaders.com/"
+		url: "https://squishyandroid.github.io/eggplantinvaders"
 	},
 	{
 		name: 'TinyMessage',

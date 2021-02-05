@@ -12,7 +12,7 @@ export default class About extends Component {
 					<Tooltip content={icon.name} position={Position.RIGHT}>
 						<i className={icon.class + " wow fadeInUp"} data-wow-delay={int + "ms"}></i>
 					</Tooltip>
-	          	</div>
+	      </div>
 			)
 		})
 	}

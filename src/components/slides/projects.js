@@ -11,35 +11,35 @@ const Project = posed.div({
 
 export default class Projects extends Component {
 	constructor(props) {
-        super(props);
-        this.state = {
-	        isOpen: false,
-	        width: 0,
-	        height: 0,
-	        index: null,
-        };
-    }
+		super(props);
+		this.state = {
+			isOpen: false,
+			width: 0,
+			height: 0,
+			index: null,
+		};
+	}
 
-    handleMouseEnter(i, e) {
-    	let project = e.target;
-    	let width = project.offsetWidth;
-    	let height = project.offsetHeight;
-    	this.setState({ width, height, index: i });
-    }
+	handleMouseEnter(i, e) {
+		let project = e.target;
+		let width = project.offsetWidth;
+		let height = project.offsetHeight;
+		this.setState({ width, height, index: i });
+	}
 
-    handleMouseLeave(i, e) {
-    	this.setState({ index: null });
-    }
+	handleMouseLeave(i, e) {
+		this.setState({ index: null });
+	}
 
-    learnMore(url) {
-    	if (url) {
-    		let win = window.open(url, '_blank');
- 			win.focus();
-    	}
-    }
+	learnMore(url) {
+		if (url) {
+			let win = window.open(url, '_blank');
+			win.focus();
+		}
+	}
 
-    renderProjects(projects) {
-    	let int = 100;
+  renderProjects(projects) {
+    let int = 100;
 		return projects.map((project, i) => {
 			int += 90;
 			return(
@@ -53,36 +53,35 @@ export default class Projects extends Component {
 					<Project 
 						className="project-description"
 						pose={i === this.state.index ? 'visible' : 'hidden'}
-                        style={{
-                        	display: i === this.state.index ? 'flex' : 'none',
-                            width: this.state.width,
-                            height: this.state.height
-                        }}>
-                        
-                        <p>{project.description}</p>
-                        <Button 
-                        	className="learn-more"
-                        	intent={Intent.PRIMARY}
-                        	onClick={() => this.learnMore(project.url)}
-                        >View more</Button>
-                    </Project>
-                    <img key={i} src={project.image} alt={project.description}/>
-                </div>
+						style={{
+							display: i === this.state.index ? 'flex' : 'none',
+							width: this.state.width,
+							height: this.state.height
+						}}>
+						<p>{project.description}</p>
+						<Button 
+							className="learn-more"
+							intent={Intent.PRIMARY}
+							onClick={() => this.learnMore(project.url)}
+						>View more</Button>
+					</Project>
+					<img key={i} src={project.image} alt={project.description}/>
+        </div>
 			)
 		})
-    }
+  }
 
-    render() {
-    	return(
+	render() {
+		return(
 			<div className="section third">
 				<ResponsiveMasonry
-	                columnsCountBreakPoints={{ 100: 2, 480: 3, 1200: 4 }}
-	            >
+					columnsCountBreakPoints={{ 100: 2, 480: 3, 1200: 4 }}
+				>
 					<Masonry columnsCount={3} gutter="6px">
-		                {this.renderProjects(projects)}
-		            </Masonry>
-		        </ResponsiveMasonry>
-	        </div>
+						{this.renderProjects(projects)}
+					</Masonry>
+				</ResponsiveMasonry>
+			</div>
 		)
-    }
+	}
 }
