@@ -28,7 +28,7 @@ const projects = [
 		name: 'TinyMessage',
 		description: 'React based chat application utilizing Socket.io',
 		image: tinymessage,
-		url: "https://tinymessage.herokuapp.com/"
+		url: "https://tinymessage.fly.dev/"
 	},
 	{
 		name: 'Machete Energy Drink',
