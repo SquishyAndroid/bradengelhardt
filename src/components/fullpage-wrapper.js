@@ -8,44 +8,44 @@ import Footer from './slides/footer';
 import Navbar from './navbar';
 
 const FullpageWrapper = fullpageProps => (<ReactFullpage
-    {...fullpageProps}
-    render = {({ state, fullpageApi }) => {
+  {...fullpageProps}
+  render = {({ state, fullpageApi }) => {
 
-        const moveToIntro = () => {
-            fullpageApi.moveTo(1);
-        }
+    const moveToIntro = () => {
+      fullpageApi.moveTo(1);
+    }
 
-        const moveToAbout = () => {
-            fullpageApi.moveTo(2);
-        }
+    const moveToAbout = () => {
+      fullpageApi.moveTo(2);
+    }
 
-        const moveToPortfolio = () => {
-            fullpageApi.moveTo(3);
-        }
+    const moveToPortfolio = () => {
+      fullpageApi.moveTo(3);
+    }
 
-        const moveToContact = () => {
-            fullpageApi.moveTo(4);
-        }
+    const moveToContact = () => {
+      fullpageApi.moveTo(4);
+    }
 
-        return (
-            <Fragment>
-                <Navbar
-                    moveToIntro={moveToIntro}
-                    moveToAbout={moveToAbout}
-                    moveToPortfolio={moveToPortfolio}
-                    moveToContact={moveToContact}
-                />
-                <Intro
-                    fullpageApi={fullpageApi}
-                    moveDown={moveToAbout}
-                />
-                <About />
-                <Projects />
-                <Contact />
-                <Footer />
-            </Fragment>
-        );
-    }}
+    return (
+      <Fragment>
+        <Navbar
+          moveToIntro={moveToIntro}
+          moveToAbout={moveToAbout}
+          moveToPortfolio={moveToPortfolio}
+          moveToContact={moveToContact}
+        />
+        <Intro
+          fullpageApi={fullpageApi}
+          moveDown={moveToAbout}
+        />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </Fragment>
+    );
+  }}
 />);
 
 export default FullpageWrapper;
