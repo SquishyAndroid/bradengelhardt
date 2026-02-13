@@ -42,43 +42,43 @@ $brand-color: #FF6363;
 
 @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateX(0);
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
     }
     40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
+        -webkit-transform: translate(-50%, -20px);
+        transform: translate(-50%, -20px);
     }
     60% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
+        -webkit-transform: translate(-50%, -10px);
+        transform: translate(-50%, -10px);
     }
 }
 
 @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
     40% {
-        transform: translateY(-20px);
+        transform: translate(-50%, -20px);
     }
     60% {
-        transform: translateY(-10px);
+        transform: translate(-50%, -10px);
     }
 }
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
     }
     40% {
-        -ms-transform: translateY(-20px);
-        transform: translateY(-20px);
+        -ms-transform: translate(-50%, -20px);
+        transform: translate(-50%, -20px);
     }
     60% {
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+        -ms-transform: translate(-50%, -10px);
+        transform: translate(-50%, -10px);
     }
 }
 

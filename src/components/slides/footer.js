@@ -11,11 +11,6 @@ const Footer = () => {
           </a>
         </span>
         <span>
-          <a href="https://twitter.com/bradengelhardt" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter fa-2x"></i>
-          </a>
-        </span>
-        <span>
           <a href="https://github.com/SquishyAndroid" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github fa-2x"></i>
           </a>

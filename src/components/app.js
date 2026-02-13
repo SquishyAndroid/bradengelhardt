@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import FullpageWrapper from './fullpage-wrapper';
-import Particles from 'react-particles-js';
 
 const linkStyles = (links, section) => {
   setTimeout(() => {
@@ -46,7 +45,6 @@ const fullpageOptions = {
 const App = () => {
   return (
     <Fragment>
-      <Particles />
       <FullpageWrapper {...fullpageOptions} />
     </Fragment>
   )
